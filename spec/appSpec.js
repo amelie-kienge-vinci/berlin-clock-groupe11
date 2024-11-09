@@ -32,4 +32,12 @@ describe("return time in Berlin Clock Kata", function(){
         expect(result).toBe('OOOX');
     });
 
+    it("return all lamps on", function(){
+        let main = new Main();
+
+        let result = main.getSimpleMinutes(4);
+
+        expect(result).toBe('OOOO');
+    });
+
 })

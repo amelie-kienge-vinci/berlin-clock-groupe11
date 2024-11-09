@@ -4,7 +4,7 @@ export class Main{
     }
  
     getSimpleMinutes(minutes) {
-        if(minutes ===0){
+        if(minutes ===0 || minutes===5){
             return this.singleMinutesRow.join('')
         }
         if(minutes===1){

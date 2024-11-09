@@ -24,5 +24,12 @@ describe("return time in Berlin Clock Kata", function(){
         expect(result).toBe('OOXX');
     });
 
+    it("return first 3 lamps on", function(){
+        let main = new Main();
+
+        let result = main.getSimpleMinutes(3);
+
+        expect(result).toBe('OOOX');
+    });
 
 })

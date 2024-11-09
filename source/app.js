@@ -13,6 +13,9 @@ export class Main{
         if(minutes===2){
             this.singleMinutesRow=['O','O','X','X']
         }
+        if(minutes===3){
+            this.singleMinutesRow=['O','O','O','X']
+        }
         
         return this.singleMinutesRow.join('');
     }

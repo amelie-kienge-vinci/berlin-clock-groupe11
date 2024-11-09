@@ -1,14 +1,20 @@
-{
-  "name": "berlin-clock-groupe11",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jasmine": "^5.4.0"
-  }
-}
+
+  {
+    "name": "berlin-clock-groupe11",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+      "test": "jasmine"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "jasmine": "^5.4.0"
+    },
+    "dependencies": {
+      "berlin-clock-groupe11": "file:"
+    }
+   }
+

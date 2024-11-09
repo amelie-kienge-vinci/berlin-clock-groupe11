@@ -7,7 +7,13 @@ export class Main{
         if(minutes ===0){
             return this.singleMinutesRow.join('')
         }
-        this.singleMinutesRow=['O','X','X','X']
+        if(minutes===1){
+            this.singleMinutesRow=['O','X','X','X']
+        }
+        if(minutes===2){
+            this.singleMinutesRow=['O','O','X','X']
+        }
+        
         return this.singleMinutesRow.join('');
     }
 

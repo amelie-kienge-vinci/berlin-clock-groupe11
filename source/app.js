@@ -4,22 +4,10 @@ export class Main{
     }
  
     getSimpleMinutes(minutes) {
-        if(minutes ===0 || minutes===5){
-            return this.singleMinutesRow.join('')
-        }
-        if(minutes===1){
-            this.singleMinutesRow=['O','X','X','X']
-        }
-        if(minutes===2){
-            this.singleMinutesRow=['O','O','X','X']
-        }
-        if(minutes===3){
-            this.singleMinutesRow=['O','O','O','X']
-        }
-        if(minutes===4){
-            this.singleMinutesRow=['O','O','O','O']
-        }
-        
+        for (let i = 0; i < minutes % 5; i++) {
+            this.singleMinutesRow[i] = 'O';
+          }
+      
         return this.singleMinutesRow.join('');
     }
 

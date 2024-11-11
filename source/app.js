@@ -44,7 +44,9 @@ export class Main{
         return this.fiveHoursRow.join('');
     };
 
-   
+    getSeconds(seconds){
+        return 'R';
+    }
 
     
 

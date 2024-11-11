@@ -8,6 +8,13 @@ describe("return time in Berlin Clock Kata", function(){
 
     testFiveHours();
 
+    it("when seconds is 0, lamp on", function () {
+        let main = new Main();
+
+        let result = main.getSeconds(0);
+
+        expect(result).toBe('R');
+    });
 
 });
 

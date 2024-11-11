@@ -45,7 +45,10 @@ export class Main{
     };
 
     getSeconds(seconds){
-        return 'R';
+        if (seconds === 0){
+            return 'R';
+        }
+        return 'X';
     }
 
     

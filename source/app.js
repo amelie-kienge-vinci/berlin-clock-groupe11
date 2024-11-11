@@ -34,7 +34,7 @@ export class Main{
 
         return this.singleHoursRow.join('');
 
-    }
+    };
 
     getFiveHours(hours){
         for (let i = 0; i < Math.floor(hours / 5); i++) {
@@ -42,9 +42,9 @@ export class Main{
         }   
         
         return this.fiveHoursRow.join('');
-    }
+    };
 
-
+   
 
     
 

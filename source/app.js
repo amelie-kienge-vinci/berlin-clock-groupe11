@@ -1,6 +1,7 @@
 export class Main{
     constructor() {       
-        this.singleMinutesRow = ['X', 'X', 'X', 'X'];   
+        this.singleMinutesRow = ['X', 'X', 'X', 'X']; 
+        this.fiveMinutesRow = ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'];  
     }
  
 
@@ -14,8 +15,10 @@ export class Main{
         return this.singleMinutesRow.join('');
     }
 
+    getFiveMinutes(minutes) {
+        return this.fiveMinutesRow.join('');
+    }
 
-    //test
 
 
 

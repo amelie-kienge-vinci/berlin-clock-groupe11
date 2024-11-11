@@ -1,5 +1,6 @@
 import { Main } from '../source/app.js';
 describe("return time in Berlin Clock Kata", function(){
+
     testSingleMinutes();
 
     testFiveMinutes();
@@ -17,12 +18,17 @@ describe("return time in Berlin Clock Kata", function(){
  
         expect(result).toBe('R\nXXXX\nXXXX\nXXXXXXXXXXX\nXXXX');
     });
-    it("should return correct Berlin Clock representation at 05:37:40", function () {
+    it("should return correct real time", function () {
+        const now = new Date();
+        this.minutes = now.getMinutes();
+        this.hours = now.getHours();
+        this.seconds = now.getSeconds();
+
         let main = new Main();
  
-        let result = main.getBerlinClock(5,37,40);
+        let result = main.getBerlinClock(this.hours, this.minutes, this.seconds);
  
-        expect(result).toBe('R\nRXXX\nXXXX\nJJRJJRJXXXX\nJJXX');
+        expect(result).toBe('R\nRRRX\nRRXX\nJJRJJRJJRJJ\nJXXX');
     });
 
 function testSeconds() {

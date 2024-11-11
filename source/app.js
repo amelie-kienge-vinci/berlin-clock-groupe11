@@ -1,15 +1,18 @@
 export class Main{
+
+    
     constructor() {       
         this.singleMinutesRow = ['X', 'X', 'X', 'X']; 
         this.fiveMinutesRow = ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']; 
         this.singleHoursRow=['X', 'X', 'X', 'X'];
         this.fiveHoursRow=['X', 'X', 'X', 'X'];
+
+       
     }
  
 
 
     getSimpleMinutes(minutes) {
-        
         for (let i = 0; i < minutes % 5; i++) {
             this.singleMinutesRow[i] = 'J';
         };
@@ -18,7 +21,6 @@ export class Main{
     };
 
     getFiveMinutes(minutes) {
-        
         for (let i = 0; i < Math.floor(minutes / 5); i++) {
             this.turnRightColors5Minutes(i);
     
@@ -45,6 +47,7 @@ export class Main{
     };
 
     getSeconds(seconds){
+        
         if (seconds %2  === 0){
             return 'R';
         }
@@ -52,12 +55,13 @@ export class Main{
     };
 
     getBerlinClock(hours, minutes, seconds) {
+       
         const secondsLamp = this.getSeconds(seconds);
         const fiveHoursRow = this.getFiveHours(hours);
         const singleHoursRow = this.getSingleHours(hours);
         const fiveMinutesRow = this.getFiveMinutes(minutes);
         const singleMinutesRow = this.getSimpleMinutes(minutes);
- 
+        
         return [
             secondsLamp,
             fiveHoursRow,
@@ -76,4 +80,6 @@ export class Main{
             this.fiveMinutesRow[i] = 'J';
         }
     };
+
+    
 }

@@ -8,6 +8,11 @@ describe("return time in Berlin Clock Kata", function(){
 
     testFiveHours();
 
+    testSeconds();
+ 
+});
+
+function testSeconds() {
     it("when seconds is 0, lamp on", function () {
         let main = new Main();
 
@@ -29,8 +34,7 @@ describe("return time in Berlin Clock Kata", function(){
 
         expect(result).toBe('R');
     });
- 
-});
+}
 
 function testFiveHours() {
     it("when hour is 0 return lamp all off", function () {

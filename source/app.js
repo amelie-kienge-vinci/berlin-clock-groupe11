@@ -51,10 +51,14 @@ export class Main{
         return 'X';
     };
 
-    getBerlinClock(seconds) {
+    getBerlinClock(hours, seconds) {
         const secondsLamp = this.getSeconds(seconds);
+        const fiveHoursRow = this.getFiveHours(hours);
 
-        return  secondsLamp;
+        return [
+            secondsLamp,
+            fiveHoursRow,
+        ].join('\n');
     }
     
 

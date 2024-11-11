@@ -10,12 +10,12 @@ describe("return time in Berlin Clock Kata", function(){
 
     testSeconds();
 
-    it("return correct lamp state seconds representation at 0sec", function () {
+    it("return correct lamp state seconds and hours at 0sec and 0hours", function () {
         let main = new Main();
 
-        let result = main.getBerlinClock(0);
+        let result = main.getBerlinClock(0,0);
 
-        expect(result).toBe('R');
+        expect(result).toBe('R\nXXXX');
     });
 
 function testSeconds() {

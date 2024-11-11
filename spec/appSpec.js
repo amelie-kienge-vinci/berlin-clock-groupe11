@@ -4,6 +4,14 @@ describe("return time in Berlin Clock Kata", function(){
 
     testFiveMinutes();
 
+    it("when hour is 0 return lamp all off", function () {
+        let main = new Main();
+
+        let result = main.getSingleHours(0);
+
+        expect(result).toBe('XXXX');
+    });
+
 });
 
 function testFiveMinutes() {

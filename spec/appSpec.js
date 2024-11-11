@@ -34,6 +34,13 @@ describe("return time in Berlin Clock Kata", function(){
         expect(result).toBe('JJRXXXXXXXX');
     });
 
+    it("when minute is less than 25 and more than 19, 4 lamp on", function () {
+        let main = new Main();
+
+        let result = main.getFiveMinutes(20);
+
+        expect(result).toBe('JJRJXXXXXXX');
+    });
    
     
 })

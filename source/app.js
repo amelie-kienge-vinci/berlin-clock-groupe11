@@ -20,7 +20,7 @@ export class Main{
             this.fiveMinutesRow[i] = 'J';
 
         }   
-        if(minutes<20 && minutes>=15){
+        if(minutes<60 && minutes>=15){
             this.fiveMinutesRow[2]='R';
         } 
         return this.fiveMinutesRow.join('');

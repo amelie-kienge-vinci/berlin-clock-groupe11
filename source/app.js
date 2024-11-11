@@ -49,8 +49,13 @@ export class Main{
             return 'R';
         }
         return 'X';
-    }
+    };
 
+    getBerlinClock(seconds) {
+        const secondsLamp = this.getSeconds(seconds);
+
+        return  secondsLamp;
+    }
     
 
     turnRightColors5Minutes(i) {

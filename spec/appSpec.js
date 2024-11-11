@@ -9,8 +9,14 @@ describe("return time in Berlin Clock Kata", function(){
     testFiveHours();
 
     testSeconds();
- 
-});
+
+    it("return correct lamp state seconds representation at 0sec", function () {
+        let main = new Main();
+
+        let result = main.getBerlinClock(0);
+
+        expect(result).toBe('R');
+    });
 
 function testSeconds() {
     it("when seconds is 0, lamp on", function () {
@@ -182,5 +188,5 @@ function testSingleMinutes() {
 
         expect(result).toBe('OXXX');
     });
-}
-
+};
+});

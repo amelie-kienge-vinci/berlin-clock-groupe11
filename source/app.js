@@ -27,6 +27,10 @@ export class Main{
     };
 
     getSingleHours(hours){
+        for (let i = 0; i < hours % 5; i++) {
+            this.singleHoursRow[i] = 'R';
+        };
+
         return this.singleHoursRow.join('');
 
     }

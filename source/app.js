@@ -51,15 +51,21 @@ export class Main{
         return 'X';
     };
 
-    getBerlinClock(hours, seconds) {
+    getBerlinClock(hours, minutes, seconds) {
         const secondsLamp = this.getSeconds(seconds);
         const fiveHoursRow = this.getFiveHours(hours);
-
+        const singleHoursRow = this.getSingleHours(hours);
+        const fiveMinutesRow = this.getFiveMinutes(minutes);
+        const singleMinutesRow = this.getSimpleMinutes(minutes);
+ 
         return [
             secondsLamp,
             fiveHoursRow,
+            singleHoursRow,
+            fiveMinutesRow,
+            singleMinutesRow
         ].join('\n');
-    }
+    };
     
 
     turnRightColors5Minutes(i) {

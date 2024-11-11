@@ -9,6 +9,15 @@ describe("return time in Berlin Clock Kata", function(){
 
         expect(result).toBe('XXXXXXXXXXX');
     });
+
+    it("when minute is less than 10 and more than 4 return first lamp on", function () {
+        let main = new Main();
+
+        let result = main.getFiveMinutes(5);
+
+        expect(result).toBe('JXXXXXXXXXX');
+    });
+    
     
 })
 function testSingleMinutes() {

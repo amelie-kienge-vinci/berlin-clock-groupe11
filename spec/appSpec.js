@@ -22,7 +22,7 @@ describe("return time in Berlin Clock Kata", function(){
  
         let result = main.getBerlinClock(5,37,40);
  
-        expect(result).toBe('R\nRXXX\nXXXX\nJJRJJRJXXXX\nOOXX');
+        expect(result).toBe('R\nRXXX\nXXXX\nJJRJJRJXXXX\nJJXX');
     });
 
 function testSeconds() {
@@ -153,7 +153,7 @@ function testSingleMinutes() {
 
         let result = main.getSimpleMinutes(1);
 
-        expect(result).toBe('OXXX');
+        expect(result).toBe('JXXX');
     });
 
     it("return first 2 lamps on", function () {
@@ -162,7 +162,7 @@ function testSingleMinutes() {
 
         let result = main.getSimpleMinutes(2);
 
-        expect(result).toBe('OOXX');
+        expect(result).toBe('JJXX');
     });
 
     it("return first 3 lamps on", function () {
@@ -170,7 +170,7 @@ function testSingleMinutes() {
 
         let result = main.getSimpleMinutes(3);
 
-        expect(result).toBe('OOOX');
+        expect(result).toBe('JJJX');
     });
 
     it("return all lamps on", function () {
@@ -178,7 +178,7 @@ function testSingleMinutes() {
 
         let result = main.getSimpleMinutes(4);
 
-        expect(result).toBe('OOOO');
+        expect(result).toBe('JJJJ');
     });
 
     it("when given 5 return lamp all off", function () {
@@ -193,7 +193,7 @@ function testSingleMinutes() {
 
         let result = main.getSimpleMinutes(6);
 
-        expect(result).toBe('OXXX');
+        expect(result).toBe('JXXX');
     });
 };
 });

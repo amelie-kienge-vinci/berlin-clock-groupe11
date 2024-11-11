@@ -11,7 +11,7 @@ export class Main{
     getSimpleMinutes(minutes) {
         
         for (let i = 0; i < minutes % 5; i++) {
-            this.singleMinutesRow[i] = 'O';
+            this.singleMinutesRow[i] = 'J';
         };
       
         return this.singleMinutesRow.join('');

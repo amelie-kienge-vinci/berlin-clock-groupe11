@@ -37,6 +37,10 @@ export class Main{
     }
 
     getFiveHours(hours){
+        for (let i = 0; i < Math.floor(hours / 5); i++) {
+           this.fiveHoursRow[i]='R'
+        }   
+        
         return this.fiveHoursRow.join('');
     }
 

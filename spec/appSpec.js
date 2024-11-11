@@ -2,6 +2,11 @@ import { Main } from '../source/app.js';
 describe("return time in Berlin Clock Kata", function(){
     testSingleMinutes();
 
+    testFiveMinutes();
+
+});
+
+function testFiveMinutes() {
     it("when minute is less than 5 return lamp all off", function () {
         let main = new Main();
 
@@ -17,7 +22,7 @@ describe("return time in Berlin Clock Kata", function(){
 
         expect(result).toBe('JXXXXXXXXXX');
     });
-    
+
     it("when minute is less than 15 and more than 9 return first 2 lamp on", function () {
         let main = new Main();
 
@@ -49,11 +54,8 @@ describe("return time in Berlin Clock Kata", function(){
 
         expect(result).toBe('JJRJJRXXXXX');
     });
+}
 
-   
-   
-    
-})
 function testSingleMinutes() {
    
 

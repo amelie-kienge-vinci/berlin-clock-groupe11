@@ -18,14 +18,8 @@ export class Main{
     getFiveMinutes(minutes) {
         
         for (let i = 0; i < Math.floor(minutes / 5); i++) {
-            if((i+1) %3===0){
-                this.fiveMinutesRow[i]='R';
-            }
-            else {
-                this.fiveMinutesRow[i] = 'J';
-            }
-            
-
+            this.turnRightColors5Minutes(i);
+    
         }   
         
         return this.fiveMinutesRow.join('');
@@ -35,4 +29,13 @@ export class Main{
 
 
     
+
+    turnRightColors5Minutes(i) {
+        if ((i + 1) % 3 === 0) {
+            this.fiveMinutesRow[i] = 'R';
+        }
+        else {
+            this.fiveMinutesRow[i] = 'J';
+        }
+    };
 }

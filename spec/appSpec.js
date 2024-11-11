@@ -22,6 +22,14 @@ describe("return time in Berlin Clock Kata", function(){
 
         expect(result).toBe('X');
     });
+    it("when seconds is 2, lamp on", function () {
+        let main = new Main();
+
+        let result = main.getSeconds(2);
+
+        expect(result).toBe('R');
+    });
+ 
 });
 
 function testFiveHours() {

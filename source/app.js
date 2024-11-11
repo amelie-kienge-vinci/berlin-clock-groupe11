@@ -18,7 +18,11 @@ export class Main{
     getFiveMinutes(minutes) {
         for (let i = 0; i < Math.floor(minutes / 5); i++) {
             this.fiveMinutesRow[i] = 'J';
-        }    
+
+        }   
+        if(minutes<20 && minutes>=15){
+            this.fiveMinutesRow[2]='R';
+        } 
         return this.fiveMinutesRow.join('');
     };
 

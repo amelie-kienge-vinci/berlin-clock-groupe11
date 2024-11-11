@@ -3,6 +3,7 @@ export class Main{
         this.singleMinutesRow = ['X', 'X', 'X', 'X']; 
         this.fiveMinutesRow = ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']; 
         this.singleHoursRow=['X', 'X', 'X', 'X'];
+        this.fiveHoursRow=['X', 'X', 'X', 'X'];
     }
  
 
@@ -33,6 +34,10 @@ export class Main{
 
         return this.singleHoursRow.join('');
 
+    }
+
+    getFiveHours(hours){
+        return this.fiveHoursRow.join('');
     }
 
 
